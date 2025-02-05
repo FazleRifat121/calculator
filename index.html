@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="container">
+      <input id="cal" readonly />
+      <div class="keyrow">
+        <input
+          type="button"
+          value="/"
+          onclick="appendToDisplay('/')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="0"
+          onclick="appendToDisplay('0')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="."
+          onclick="appendToDisplay('.')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="%"
+          onclick="appendToDisplay('%')"
+          class="key"
+        />
+      </div>
+      <div class="keyrow">
+        <input
+          type="button"
+          value="X"
+          onclick="appendToDisplay('*')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="7"
+          onclick="appendToDisplay('7')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="8"
+          onclick="appendToDisplay('8')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="9"
+          onclick="appendToDisplay('9')"
+          class="key"
+        />
+      </div>
+      <div class="keyrow">
+        <input
+          type="button"
+          value="-"
+          onclick="appendToDisplay('-')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="4"
+          onclick="appendToDisplay('4')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="5"
+          onclick="appendToDisplay('5')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="6"
+          onclick="appendToDisplay('6')"
+          class="key"
+        />
+      </div>
+      <div class="keyrow">
+        <input
+          type="button"
+          value="+"
+          onclick="appendToDisplay('+')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="1"
+          onclick="appendToDisplay('1')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="2"
+          onclick="appendToDisplay('2')"
+          class="key"
+        />
+        <input
+          type="button"
+          value="3"
+          onclick="appendToDisplay('3')"
+          class="key"
+        />
+      </div>
+      <div class="lastKeyrow">
+        <input type="button" value="=" onclick="calculate()" class="key" />
+        <input type="button" value="Ce" onclick="cls()" class="key" />
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
